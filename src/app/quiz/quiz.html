@@ -1,0 +1,16 @@
+<div class="quiz-container">
+    <h2>Лабораторна №4: Quiz</h2>
+  
+    <app-question
+      #questionRef
+      [question]="myQuestion"
+      (answerSelected)="onAnswerReceived($event)"
+    ></app-question>
+  
+    <div class="controls">
+      <p>{{ statusMessage }}</p>
+      <button class="primary-btn" (click)="checkAnswer()">
+        Відповісти
+      </button>
+    </div>
+  </div>

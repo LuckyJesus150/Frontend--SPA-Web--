@@ -1,0 +1,19 @@
+<div class="question-card">
+    <h3>{{ question.text }}</h3>
+  
+    <div class="options">
+      <button 
+        *ngFor="let option of question.options"
+        (click)="onSelect(option)"
+        [class.selected]="option === selectedOption"
+        [class.correct]="isAnswerShown && option === question.correctAnswer"
+        [class.wrong]="isAnswerShown && option === selectedOption && option !== question.correctAnswer"
+      >
+        {{ option }}
+      </button>
+    </div>
+    
+    <p *ngIf="isAnswerShown" class="hint">
+      Правильна відповідь: <strong>{{ question.correctAnswer }}</strong>
+    </p>
+  </div>
