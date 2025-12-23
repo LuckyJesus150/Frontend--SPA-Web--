@@ -17,7 +17,6 @@
     align-items: center;
   }
   
-  /* Зелений градієнт, якщо клас active */
   .header.active {
     background: linear-gradient(135deg, #42a5f5, #1976d2);
   }
