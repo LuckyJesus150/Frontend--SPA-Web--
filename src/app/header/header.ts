@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './header.css',
 })
 export class Header {
-  public projectName = 'Лр №1';
+  public projectName = 'Практична робота №2';
 }

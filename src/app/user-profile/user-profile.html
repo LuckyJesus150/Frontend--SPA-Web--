@@ -1,0 +1,25 @@
+<div class="profile-card">
+    <div class="header" [class.active]="user.status === 'Active'">
+      <h2>{{ user.name }}</h2>
+      <span class="status-badge">{{ user.status }}</span>
+    </div>
+  
+    <div class="body">
+      <p><strong>ID:</strong> {{ user.id }}</p>
+      
+      <div class="address-block">
+        <h3>Адреса:</h3>
+        <p>Місто: {{ user.address.city }}</p>
+        <p>Вулиця: {{ user.address.street }}</p>
+      </div>
+  
+      <div class="hobbies-block">
+        <h3>Хобі ({{ getHobbiesCount() }}):</h3>
+        <ul>
+          <li *ngFor="let hobby of user.hobbies">
+            {{ hobby }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>

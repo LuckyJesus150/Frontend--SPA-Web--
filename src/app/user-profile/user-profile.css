@@ -1,0 +1,45 @@
+.profile-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 350px;
+    overflow: hidden;
+    margin: 20px auto;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .header {
+    background: #555;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Зелений градієнт, якщо клас active */
+  .header.active {
+    background: linear-gradient(135deg, #42a5f5, #1976d2);
+  }
+  
+  .status-badge {
+    background: rgba(255,255,255,0.2);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+  }
+  
+  .body {
+    padding: 20px;
+    color: #333;
+  }
+  
+  h3 {
+    margin-top: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    color: #444;
+  }
+  
+  ul { padding-left: 20px; }
+  li { margin-bottom: 5px; }
